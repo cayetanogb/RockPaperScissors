@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Play rock paper scissors</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Piedra, Papel o Tijeras</h1>
+  <main>
+    <section class="score-container">
+      <div>
+        <strong>Jugador: <span>0</span></strong>
+        <img src="./rock.svg" alt="rock" class="option-selected">
+      </div>
+      <div>
+        <strong>Ordenador: <span>0</span></strong>
+        <div id="computer">
+          <img src="./rock.svg" alt="rock" class="option-selected">
+        </div>
+      </div>
+    </section>
+  
+    <section>
+      <h2>Elige una opción</h2>
+      <div class="options-container">
+       <img src="./rock.svg" alt="rock" class="option-img">
+       <img src="./paper.svg" alt="paper" class="option-img">
+       <img src="./scissors.svg" alt="scissors" class="option-img">
+      </div>
+    </section>
+  
+    <div class="results-container">
+    </div>
+    
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
