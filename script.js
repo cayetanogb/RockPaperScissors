@@ -34,8 +34,8 @@ function getRoundResults(userOption) {
   setTimeout(() => {
     playerOption.classList.remove('option-play')
     computerOption.classList.remove('option-play')
-    playerOption.src = `./${userOption}.svg`
-    computerOption.src = `./${computerResult}.svg`
+    playerOption.src = `./img/${userOption}.svg`
+    computerOption.src = `./img/${computerResult}.svg`
 
     if (computerResult === userOption) {
       roundResult.textContent = 'Empate';
@@ -70,8 +70,8 @@ function getRoundResults(userOption) {
 }
 
 function resetRound() {
-  playerOption.src = './rock.svg'
-  computerOption.src = './rock.svg'
+  playerOption.src = './img/rock.svg'
+  computerOption.src = './img/rock.svg'
   roundResult.textContent = '';
 }
 
