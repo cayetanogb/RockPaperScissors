@@ -40,10 +40,17 @@ main {
   transform: scaleX(-1);
 }
 
-.options-container {
+.options {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.result {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
 }
 
 h2 {
@@ -59,4 +66,37 @@ h2 {
 
 .option-img:hover {
   transform: scale(1.1);
+}
+
+.result-container {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.btn {
+  width: 50%;
+  margin: 10px;
+  border-color: #5cf;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 5px;
+  font-size: 16px;
+  background-color: #1f1f1f;
+  color: #ffffff;
+}
+
+.btn:hover {
+  background-color: #5cf;
+  color: #1f1f1f;
+}
+
+.option-play {
+  animation: bounce 0.5s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px);}
 }

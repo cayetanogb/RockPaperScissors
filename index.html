@@ -11,27 +11,31 @@
   <main>
     <section class="score-container">
       <div>
-        <strong>Jugador: <span>0</span></strong>
-        <img src="./rock.svg" alt="rock" class="option-selected">
+        <strong>Jugador: <span id="player-score">0</span></strong>
+        <img src="./rock.svg" alt="option-player" class="option-selected" id="player-option">
       </div>
       <div>
-        <strong>Ordenador: <span>0</span></strong>
+        <strong>CPU: <span id="computer-score">0</span></strong>
         <div id="computer">
-          <img src="./rock.svg" alt="rock" class="option-selected">
+          <img src="./rock.svg" alt="option-computer" class="option-selected" id="computer-option">
         </div>
       </div>
     </section>
+
+    <p id="round-result" class="result"></p>
   
-    <section>
+    <section class="options-container">
       <h2>Elige una opción</h2>
-      <div class="options-container">
-       <img src="./rock.svg" alt="rock" class="option-img">
-       <img src="./paper.svg" alt="paper" class="option-img">
-       <img src="./scissors.svg" alt="scissors" class="option-img">
+      <div class="options">
+       <img src="./rock.svg" alt="rock" class="option-img" id="rock-option">
+       <img src="./paper.svg" alt="paper" class="option-img" id="paper-option">
+       <img src="./scissors.svg" alt="scissors" class="option-img" id="scissors-option">
       </div>
     </section>
   
-    <div class="results-container">
+    <div class="result-container">
+      <p id="winner-msg" class="result"></p>
+      <button class="btn" id="reset-game-btn">Resetear</button>
     </div>
     
   </main>
